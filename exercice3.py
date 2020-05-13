@@ -12,6 +12,7 @@ class Hello(QWidget):
         self.label = QLabel("Hello World")
         self.setAlignment(Qt.AlignCenter)
         self.barre = QProgressBar()
+        
 
 
 if __name__ == "__main__":
