@@ -10,8 +10,18 @@ class Hello(QWidget):
         self.setWindowIcon(self.icon)
         self.layout = QVBoxLayout()
         self.label = QLabel("Hello World")
-        self.setAlignment(Qt.AlignCenter)
+        self.label.setAlignment(Qt.AlignCenter)
         self.barre = QProgressBar()
+        self.barre.setValue(75)
+        self.line = QLineEdit()
+        self.button = QPushButton("Cliquer ici !")
+        self.button.setToolTip("Oui oui, ici !")
+        self.layout.addWidget(self.label)
+        self.layout.addWidget(self.barre)
+        self.layout.addWidget(self.line)
+        self.layout.addWidget(self.button)
+        self.setLayout(self.layout)
+
         
 
 
